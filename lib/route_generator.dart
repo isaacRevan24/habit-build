@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:habit_build/features/habits/presentation/pages/habits.dart';
-import 'package:habit_build/features/profile/presentation/pages/profile.dart';
-import 'package:habit_build/features/town/presentation/pages/town.dart';
+import 'package:habit_build/presentation/habits/habits.dart';
+import 'package:habit_build/presentation/profile/profile.dart';
+import 'package:habit_build/presentation/town/town.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
