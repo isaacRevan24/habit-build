@@ -7,24 +7,18 @@ class Habits extends StatelessWidget {
       appBar: AppBar(
         title: Text("Habits"),
       ),
-      body: Center(
-        child: Column(
-          children: [
-            RaisedButton(
-              child: Text("profile"),
-              onPressed: () {
-                Navigator.of(context).pushNamed('/profile');
-              },
-            ),
-            RaisedButton(
-              child: Text("town"),
-              onPressed: () {
-                Navigator.of(context).pushNamed('/town');
-              },
-            ),
-          ],
+      body: Container(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+      floatingActionButton: Padding(
+        padding: const EdgeInsetsDirectional.only(bottom: 65),
+        child: FloatingActionButton(
+          onPressed: () {},
+          child: Icon(Icons.plus_one),
         ),
       ),
     );
   }
 }
+//onPressed: () {
+//                Navigator.of(context).pushNamed('/profile');
+//              },
