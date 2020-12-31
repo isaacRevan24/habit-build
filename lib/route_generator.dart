@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:habit_build/presentation/core/bottom_navigation_bar.dart';
 import 'package:habit_build/presentation/habits/habits.dart';
 import 'package:habit_build/presentation/profile/profile.dart';
 import 'package:habit_build/presentation/town/town.dart';
@@ -10,6 +11,8 @@ class RouteGenerator {
 
     switch (settings.name) {
       case '/':
+        return MaterialPageRoute(builder: (_) => Navigation());
+      case '/habits':
         return MaterialPageRoute(builder: (_) => Habits());
       case '/town':
         return MaterialPageRoute(builder: (_) => Town());
