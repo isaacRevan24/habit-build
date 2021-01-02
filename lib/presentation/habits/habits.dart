@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 class Habits extends StatelessWidget {
@@ -7,13 +9,17 @@ class Habits extends StatelessWidget {
       appBar: AppBar(
         title: Text("Habits"),
       ),
-      body: Container(),
+      body: Row(
+        children: [],
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       floatingActionButton: Padding(
         padding: const EdgeInsetsDirectional.only(bottom: 65),
         child: FloatingActionButton(
-          onPressed: () {},
-          child: Icon(Icons.plus_one),
+          onPressed: () {
+            print("Crear nuevo habito");
+          },
+          child: Icon(Icons.add),
         ),
       ),
     );
